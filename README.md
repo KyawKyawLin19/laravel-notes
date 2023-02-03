@@ -27,3 +27,22 @@
     $child = new ChildClass();
     $child->showConstant();  // Outputs: Base class constant
     
+    
+    <?php
+        class BaseClass {
+            const CONSTANT = "Base class constant";
+        }
+
+        trait MyTrait {
+            public function showConstant() {
+              echo BaseClass::CONSTANT;
+            }
+        }
+
+        class ChildClass {
+            use MyTrait;
+        }
+
+        $child = new ChildClass();
+        $child->showConstant();  // Outputs: Base class constant
+    
