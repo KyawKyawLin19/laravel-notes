@@ -8,7 +8,7 @@
     different file - require/include
     Although traits were not allowed to declare constants, it was possible to access constants in PHP classes that the traits are used in.
     
-    ```php
+    
     <?php
     class BaseClass {
       const CONSTANT = "Base class constant";
@@ -26,5 +26,4 @@
 
     $child = new ChildClass();
     $child->showConstant();  // Outputs: Base class constant
-    ?>
-    ```
+    
