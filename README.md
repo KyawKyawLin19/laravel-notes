@@ -1,5 +1,5 @@
 # Naming Conventions
-    Class Name - CapitalCase
+    Class Name, Namespace - CapitalCase
     Property, Method - camelCase
     Variable Name, Database Name, Column Name, Table Name - snake_case
 # Trait
